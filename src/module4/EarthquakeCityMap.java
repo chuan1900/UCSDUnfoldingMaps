@@ -243,6 +243,27 @@ public class EarthquakeCityMap extends PApplet {
 		System.out.println("total ocean quakes: "+ totalOceanQuakes);
 	}
 	
+	private void printQuakes_quick() 
+	{
+		// TODO: Implement this method
+		int totalOceanQuakes = quakeMarkers.size();
+		for(Marker country : countryMarkers){
+			int numQuakes = 0;
+			String countryName = country.getStringProperty("name");
+			for(Marker mk : quakeMarkers){
+				EarthquakeMarker eqMarker = (EarthquakeMarker)mk;
+				if(eqMarker.isOnLand()){
+					if(countryName.equals(eqMarker.getStringProperty("country"))){
+						numQuakes++;
+					}
+				}
+			}
+			System.out.println(countryName+ ":" + numQuakes);
+			totalOceanQuakes -= numQuakes;
+		}
+		System.out.println("total ocean quakes: "+ totalOceanQuakes);
+	}
+	
 	
 	
 	// helper method to test whether a given earthquake is in a given country
