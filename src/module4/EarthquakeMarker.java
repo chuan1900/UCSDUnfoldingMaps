@@ -4,11 +4,10 @@ import de.fhpotsdam.unfolding.data.PointFeature;
 import de.fhpotsdam.unfolding.marker.SimplePointMarker;
 import processing.core.PGraphics;
 
-/** Implements a visual marker for earthquakes on an earthquake map
+/** 
  * 
- * @author UC San Diego Intermediate Software Development MOOC team
- * @author Your name here
- *
+ * Implements a visual marker for earthquakes on an earthquake map
+ * 
  */
 public abstract class EarthquakeMarker extends SimplePointMarker
 {

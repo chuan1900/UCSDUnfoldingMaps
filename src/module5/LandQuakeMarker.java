@@ -5,8 +5,7 @@ import processing.core.PGraphics;
 
 /** Implements a visual marker for land earthquakes on an earthquake map
  * 
- * @author UC San Diego Intermediate Software Development MOOC team
- * @author Your name here
+ * @author chuan1900
  *
  */
 public class LandQuakeMarker extends EarthquakeMarker {
