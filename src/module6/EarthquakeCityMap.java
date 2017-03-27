@@ -424,5 +424,19 @@ public class EarthquakeCityMap extends PApplet {
 		}
 		return false;
 	}
+	
+	 public float printMaxMagnitude() {
+			
+			EarthquakeMarker[] arrayOfmarker = new EarthquakeMarker[quakeMarkers.size()];
+			quakeMarkers.toArray(arrayOfmarker);
+			Arrays.sort(arrayOfmarker);
+			
+			return arrayOfmarker[1].getMagnitude();
+			
+		}
+
+		/*TODO
+		 * 5. Add some extensions
+		 */
 
 }
